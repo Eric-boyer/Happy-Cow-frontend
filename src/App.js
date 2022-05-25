@@ -6,10 +6,11 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Header from "./components/Header";
-import Modal from "./components/Modal";
+import Restaurant from "./pages/Restaurant";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {faBarsStaggered,faMagnifyingGlass} from "@fortawesome/free-solid-svg-icons";
+
 library.add(faBarsStaggered,faMagnifyingGlass);
 
 function App() {
@@ -27,10 +28,10 @@ function App() {
   };
   return (
     <Router>
-      <Header />
+      <Header token={token} setUser={setUser}/>
       <Routes>
+      <Route path="/restaurant" element={<Restaurant />} />
         <Route path="/" element={<Home />} />
-        <Route path="modal" element ={<Modal setUser={setUser} />} />
         <Route path="/login" element={<Login setUser={setUser} />} />
         <Route path="/signup" element={<Signup setUser={setUser} />} />
       </Routes>

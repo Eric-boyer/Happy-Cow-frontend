@@ -4,11 +4,12 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
-const Modal = ({ closeModal, setUser }) => {
+const Modal = ({ closeModal,setUser }) => {
   const [username, setUsername] = useState("eric5");
   const [email, setEmail] = useState("eric5@mail.com");
   const [password, setPassword] = useState("salut");
   const [error, setError] = useState("");
+  
   const navigate = useNavigate();
 
   const handleSignup = async (event) => {
@@ -23,8 +24,8 @@ const Modal = ({ closeModal, setUser }) => {
       console.log(response.data);
       if (response.data) {
         console.log("j'ai réussi ma création");
-        setUser(response.data.token);
-        navigate("/");
+         setUser(response.data.token);
+        navigate("/restaurant");
       }
     } catch (error) {
       console.log(error.message);
@@ -68,7 +69,7 @@ const Modal = ({ closeModal, setUser }) => {
               onChange={(event) => setPassword(event.target.value)}
             />
             <br />
-            <input onClick={() => navigate("/")} type="submit" value="se connecter" />
+            <input  onClick={() => navigate("/")} type="submit" value="se connecter"  style={{ color: "white", backgroundColor: "#9069CD", }} />
             <p className="message-error">{error}</p>
           </form>
         </div>
@@ -76,7 +77,7 @@ const Modal = ({ closeModal, setUser }) => {
           <button id="cancelBtn" onClick={() => closeModal(false)}>
             Cancel
           </button>
-          <button onClick={() => navigate("/")} >contiinuer</button>
+          <button onClick={() => navigate("/")} >continuer</button>
         </div>
       </div>
     </div>

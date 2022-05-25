@@ -68,3 +68,16 @@
     border-radius: 5px;
 border:none
 }
+/* MEDIA QUERIES */
+/* @media(max-widht:1,) */
+
+.thumbnain-picture{
+  height: 193px;
+}
+.description{
+  font-size: 10px;
+}
+.caroussel-container{
+  display: flex;
+  overflow-y: scroll;
+}

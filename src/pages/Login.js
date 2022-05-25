@@ -22,7 +22,7 @@ const Login = ({ setUser }) => {
       if (response.data) {
         console.log("j'ai réussi ma création");
         setUser(response.data.token);
-        navigate("/");
+        // navigate("/");
       }
     } catch (error) {
       console.log(error.message);
@@ -57,7 +57,7 @@ const Login = ({ setUser }) => {
         onChange={(event) => setPassword(event.target.value)}
       />
       <br />
-      <button type="submit" value="se connecter" />
+      <button className="butt-sign " />
       <p className="message-error">{error}</p>
     </form>
   );
