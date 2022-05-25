@@ -79,5 +79,5 @@ border:none
 }
 .caroussel-container{
   display: flex;
-  overflow-y: scroll;
+ flex-direction: row;
 }
