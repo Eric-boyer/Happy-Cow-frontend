@@ -6,7 +6,7 @@ const Login = ({ setUser }) => {
   const [username, setUsername] = useState("eric5");
   const [email, setEmail] = useState("eric5@mail.com");
   const [password, setPassword] = useState("salut");
-  const [error, setError] = useState("salut");
+  const [error, setError] = useState("");
 
   const navigate = useNavigate();
   const handleSignup = async (event) => {
@@ -57,7 +57,7 @@ const Login = ({ setUser }) => {
         onChange={(event) => setPassword(event.target.value)}
       />
       <br />
-      <input type="submit" value="s'inscrire" />
+      <button type="submit" value="se connecter" />
       <p className="message-error">{error}</p>
     </form>
   );

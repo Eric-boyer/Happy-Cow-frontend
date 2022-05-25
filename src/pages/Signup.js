@@ -37,7 +37,7 @@ const Signup = ({ setUser }) => {
   };
 
   return (
-    <form onSubmit={handleSignup}>
+    <form className="register-box" onSubmit={handleSignup}>
       <p>SIGNUP</p>
       <input
         value={username}
@@ -67,7 +67,7 @@ const Signup = ({ setUser }) => {
         onChange={(event) => setConfirmpassword(event.target.value)}
       />
       <br />
-      <input type="submit" value="s'inscrire" />
+      <button className="butt-sign"> se connecter</button>
       <p className="message-error">{error}</p>
     </form>
   );

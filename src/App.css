@@ -1,3 +1,70 @@
-.message-error{
-    color: brown;
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.message-error {
+  color: brown;
+}
+.header-container {
+  max-width: auto;
+  height: 55px;
+  
+  display: flex;
+  justify-content: space-between;
+}
+.div-font {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.div-logo {
+  height: 80%;
+  width: 29vh;
+ 
+  
+ margin-left: 8%;
+}
+.foont{
+    margin-left: 4%;
+    cursor: pointer;
+}
+.foont1{
+    margin-right: 10%;
+   font-size: 22px;
+   font-weight: "bold";
+   cursor: pointer;
+}
+.box-input{
+    display: flex;
+     margin-right: 24px;
+     font-size: 61%;
+     border:none;
+     border-radius: 5px;;
+     cursor: pointer;
+     border:none
+     
+     
+}
+.logo{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.register-box{
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   
+ 
+}
+.butt-sign{
+    background:#9069CD;
+    padding: 10px;
+    border-radius: 5px;
+border:none
 }
