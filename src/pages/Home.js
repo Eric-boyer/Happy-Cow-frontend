@@ -2,22 +2,20 @@ import data from "../assets/data.json";
 
 const Home = () => {
   return (
-    <div  className="caroussel-container">
+    <div className="container">
       {data.map((mainname, index) => {
-        console.log(mainname);
+       // console.log(mainname);
         return (
-          <div key={index}>
-            <div className="name-thumbail-description-container">
+          <div className="name-thumbail-description-container" key={index}>
             <div className="name-thumbnail">
               <p>{mainname.name}</p>
               <div className="picture-div">
-              <img className="thumbnain-picture" src={mainname.thumbnail} />
+                <img className="thumbnain-picture" src={mainname.thumbnail} alt=""/>
               </div>
             </div>
             <div>
               <p className="description">{mainname.description}</p>
             </div>
-          </div>
           </div>
         );
       })}

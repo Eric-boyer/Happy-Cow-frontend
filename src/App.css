@@ -10,7 +10,7 @@
 .header-container {
   max-width: auto;
   height: 55px;
-  
+
   display: flex;
   justify-content: space-between;
 }
@@ -22,62 +22,62 @@
 .div-logo {
   height: 80%;
   width: 29vh;
- 
-  
- margin-left: 8%;
+
+  margin-left: 8%;
 }
-.foont{
-    margin-left: 4%;
-    cursor: pointer;
+.foont {
+  margin-left: 4%;
+  cursor: pointer;
 }
-.foont1{
-    margin-right: 10%;
-   font-size: 22px;
-   font-weight: "bold";
-   cursor: pointer;
+.foont1 {
+  margin-right: 10%;
+  font-size: 22px;
+  font-weight: "bold";
+  cursor: pointer;
 }
-.box-input{
-    display: flex;
-     margin-right: 24px;
-     font-size: 61%;
-     border:none;
-     border-radius: 5px;;
-     cursor: pointer;
-     border:none
-     
-     
+.box-input {
+  display: flex;
+  margin-right: 24px;
+  font-size: 61%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
 }
-.logo{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    cursor: pointer;
+.logo {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
 }
 
-.register-box{
-    position: absolute; 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-   
- 
+.register-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.butt-sign{
-    background:#9069CD;
-    padding: 10px;
-    border-radius: 5px;
-border:none
+.butt-sign {
+  background: #9069cd;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
 }
 /* MEDIA QUERIES */
 /* @media(max-widht:1,) */
-
-.thumbnain-picture{
+.container {
+  width: 1230px;
+  height: 0 auto;
+  background-color: aqua;
+  padding: 0 auto;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.thumbnain-picture {
   height: 193px;
 }
-.description{
+.description {
   font-size: 10px;
-}
-.caroussel-container{
-  display: flex;
- flex-direction: row;
 }
