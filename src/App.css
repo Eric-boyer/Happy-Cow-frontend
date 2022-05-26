@@ -2,6 +2,37 @@
   margin: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+
+
+}
+.restauran{
+  max-width: 0 auto;
+  height: 220px;
+  background-image: url("./assets/img/Vegan.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Vg-picture-Home{
+  padding-bottom: 23px;
+  width: 100vw;
+  height: 34vw;
+  object-fit: cover;
+  margin-bottom: 23px;
+}
+.input-inside-picture{
+  position: relative;
+  top: -320px;
+  width:33vw ;
+  margin-left: 35%;
+  color: white;
+  height: 43px;
+  font-size: 17px;
+  border-radius: 9px;
+  background-color:whitesmoke;
+  border:none;
+  color:gray
+
 }
 
 .message-error {
@@ -66,18 +97,33 @@
 /* MEDIA QUERIES */
 /* @media(max-widht:1,) */
 .container {
-  width: 1230px;
+  width: 1650px;
   height: 0 auto;
-  background-color: aqua;
+ 
   padding: 0 auto;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  justify-content: space-around;
   
 }
 .thumbnain-picture {
-  height: 193px;
+  height: 245px;
+  border-radius: 5px;
+  max-width:325%;
 }
 .description {
-  font-size: 10px;
+  font-size: 18px;
+  overflow: hidden;
 }
+.name-thumbail-description-container{
+  max-width:190px;
+  margin: 33px;
+}
+.name-thumbnail{
+  font-size: 14px;
+  font-weight:500;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+

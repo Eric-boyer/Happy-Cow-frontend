@@ -1,17 +1,22 @@
 .modalBackground{
-width: 100vw;
-height: 100vw;
-background-color: rgba(200,200,200);
+width: 50vw;
+height: 20vw;
+background-color: rgb(231, 231, 231);
 position: fixed;
     display: flex;
     flex-direction: column;
     padding: 25px;
+    margin-left: 25%;
+    transition: all 0,90s ease-out;
+    border-radius: 9px;
+    display: flex;
 }
 
 .modalContainer{
     display: inline-block;
     text-align: center;
     margin-top: 10px;
+   
 
 }
 .titleClooseBtn{
@@ -56,4 +61,8 @@ position: fixed;
 
 #cancelBtn{
     background-color: crimson;
+}
+.modal-image{
+    height: 5Opx;
+    width: 93px;
 }

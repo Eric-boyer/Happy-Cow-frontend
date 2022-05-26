@@ -3,6 +3,8 @@ import "../components/Modal.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import veganKelsey from "../assets/img/veganKelsey.webp"
+
 
 const Modal = ({ closeModal,setUser }) => {
   const [username, setUsername] = useState("eric5");
@@ -37,7 +39,11 @@ const Modal = ({ closeModal,setUser }) => {
   };
 
   return (
+    
     <div className="modalBackground">
+      <div>
+<img className="modal-image" src={veganKelsey} alt=""/>
+      </div>
       <div className="modalContainer">
         <div className="titleClooseBtn">
           <button onClick={() => closeModal(false)}>x</button>
@@ -69,7 +75,7 @@ const Modal = ({ closeModal,setUser }) => {
               onChange={(event) => setPassword(event.target.value)}
             />
             <br />
-            <input  onClick={() => navigate("/")} type="submit" value="se connecter"  style={{ color: "white", backgroundColor: "#9069CD", }} />
+            <input  onClick={() => navigate("/restaurant")} type="submit" value="se connecter"  style={{ color: "white", backgroundColor: "#9069CD", }} />
             <p className="message-error">{error}</p>
           </form>
         </div>
@@ -81,6 +87,7 @@ const Modal = ({ closeModal,setUser }) => {
         </div>
       </div>
     </div>
+    
   );
 };
 
