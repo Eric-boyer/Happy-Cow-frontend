@@ -41,41 +41,41 @@ const Modal = ({ closeModal,setUser }) => {
   return (
     
     <div className="modalBackground">
-      <div>
+      <div className="modal-picture-container">
 <img className="modal-image" src={veganKelsey} alt=""/>
       </div>
       <div className="modalContainer">
         <div className="titleClooseBtn">
           <button onClick={() => closeModal(false)}>x</button>
         </div>
-        <div className="title">
-          <h4>est tu sur de vouloir continuer? Si Oui</h4>
+        <div className="title" >
+          <h4 className="title" style={{color:"white"}}>Est tu sur de vouloir continuer? Si Oui</h4>
         </div>
-        <div className="body">
+        <div className="body-form">
           <form onSubmit={handleSignup}>
-            <p>LOGIN</p>
-            <input
+            <h4 style={{color:"white"}}>LOG TOI</h4>
+            <input className="input-login"
               value={username}
               placeholder="Username"
               type="texte"
               onChange={(event) => setUsername(event.target.value)}
             />
             <br />
-            <input
+            <input className="input-login"
               value={email}
               placeholder="Email"
               type="texte"
               onChange={(event) => setEmail(event.target.value)}
             />
             <br />
-            <input
+            <input className="input-login"
               value={password}
               placeholder="Password"
               type="password"
               onChange={(event) => setPassword(event.target.value)}
             />
             <br />
-            <input  onClick={() => navigate("/restaurant")} type="submit" value="se connecter"  style={{ color: "white", backgroundColor: "#9069CD", }} />
+            <input className="button-login"  onClick={() => navigate("/restaurant")} type="submit" value="se connecter"  style={{ color: "white", backgroundColor: "#9069CD" }} />
             <p className="message-error">{error}</p>
           </form>
         </div>
@@ -83,7 +83,7 @@ const Modal = ({ closeModal,setUser }) => {
           <button id="cancelBtn" onClick={() => closeModal(false)}>
             Cancel
           </button>
-          <button onClick={() => navigate("/")} >continuer</button>
+          <button onClick={() => navigate("/signup")} >Register</button>
         </div>
       </div>
     </div>

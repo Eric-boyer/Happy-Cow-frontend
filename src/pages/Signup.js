@@ -37,30 +37,31 @@ const Signup = ({ setUser }) => {
   };
 
   return (
+    <div className="restaurant">
     <form className="register-box" onSubmit={handleSignup}>
       <p>SIGNUP</p>
-      <input
+      <input className="input"
         value={username}
         placeholder="Username"
         type="texte"
         onChange={(event) => setUsername(event.target.value)}
       />
       <br />
-      <input
+      <input className="input"
         value={email}
         placeholder="Email"
         type="email"
         onChange={(event) => setEmail(event.target.value)}
       />
       <br />
-      <input
+      <input className="input"
         value={password}
         placeholder="Password"
         type="password"
         onChange={(event) => setPassword(event.target.value)}
       />
       <br />
-      <input
+      <input className="input"
         value={confirmpassword}
         placeholder="Confirm-Password"
         type="password"
@@ -70,6 +71,7 @@ const Signup = ({ setUser }) => {
       <button className="butt-sign"> se connecter</button>
       <p className="message-error">{error}</p>
     </form>
+    </div>
   );
 };
 

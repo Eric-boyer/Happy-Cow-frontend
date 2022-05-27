@@ -8,6 +8,7 @@ const Header = ({ token, setUser }) => {
   const navigate = useNavigate();
   const [openModal, setOpenModal] = useState(false);
 
+
   return (
     <>
       <section className="header-container">

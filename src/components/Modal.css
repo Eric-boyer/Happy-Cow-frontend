@@ -1,68 +1,85 @@
-.modalBackground{
-width: 50vw;
-height: 20vw;
-background-color: rgb(231, 231, 231);
-position: fixed;
-    display: flex;
-    flex-direction: column;
-    padding: 25px;
-    margin-left: 25%;
-    transition: all 0,90s ease-out;
-    border-radius: 9px;
-    display: flex;
+.modalBackground {
+  width: 50vw;
+  height: 14vw;
+  background-color: rgb(123, 216, 74);
+  position: fixed;
+  margin-left: 25%;
+  transition: all 0, 90s ease-out;
+  border-radius: 9px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.modalContainer{
-    display: inline-block;
-    text-align: center;
-    margin-top: 10px;
-   
-
+.modalContainer {
+display: inline-block;
+margin-right: 10%;
+margin-top: 1%;
 }
-.titleClooseBtn{
-    display: flex;
-    justify-content: flex-end;
-
-}
-
-.titleClooseBtn{
-    background-color: transparent;
-    border: none;
-    font-size: 25px;
-    cursor: pointer;
-
-}
-.modalContainer .body{
-    flex: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1,7rem;
-    text-align: center;
-
-}
-.modalContainer .footer{
-    flex: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.modalContainer .footer button{
-    width: 150px;
-    height: 45px;
-    margin: 10px;
-    border:none;
-    background-color: brown;
-    color: white;
-    border-radius: 8px;
-    font-size: 20px;
-    cursor: pointer;
+.titleClooseBtn {
+  display: flex;
+  justify-content: flex-end;
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+  border-radius: 9px;
 }
 
-#cancelBtn{
-    background-color: crimson;
+
+/* .modalContainer .body {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1, 7rem;
+  text-align: center;
+} */
+/* .modalContainer .footer {
+  flex: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.button-login{
+  border-radius: 8px;
+  border: none;
+  margin-top: 10px;
 }
-.modal-image{
-    height: 5Opx;
-    width: 93px;
+.modalContainer .footer button {
+
+  margin: 10px;
+  border: none;
+  background-color:#9069CD;
+  color: white;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+#cancelBtn {
+  background-color: crimson;
+  
+}
+.modal-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.modal-picture-container {
+  height: 100%;
+  
+ 
+  width:490px;
+}
+.body-form {
+  padding-top: 2px;
+  
+}
+
+.input-login{
+  height: 2vw;
+  width: 290px;
+  border-radius: 6px;
+  
 }
