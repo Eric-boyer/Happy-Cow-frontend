@@ -12,9 +12,9 @@ const Home = () => {
 
   useEffect(() => {
     const filterTab = data.filter((item) => {
-      return item.name.toLocaleLowerCase() === search;
+      return item.name.toLocaleLowerCase().includes(search.toLowerCase())
     });
-    console.log(filterTab);
+    // console.log(filterTab);
     setRecomandation(filterTab);
   }, [search]);
 
@@ -28,9 +28,10 @@ const Home = () => {
           className="input-inside-picture"
           onChange={(event) => {
             setSearch(event.target.value);
+            console.log(search)
           }}
         ></input>
-        <Link to="/recherche" state={setSearch}>
+        <Link to="/recherche" state={search}>
           <div className="loupe-search">
             <FontAwesomeIcon
               icon="fa-solid fa-magnifying-glass"
