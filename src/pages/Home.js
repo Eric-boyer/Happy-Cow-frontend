@@ -12,7 +12,7 @@ const Home = () => {
 
   useEffect(() => {
     const filterTab = data.filter((item) => {
-      return item.name.toLocaleLowerCase().includes(search.toLowerCase())
+      return item.name.toLowerCase()=== search
     });
     // console.log(filterTab);
     setRecomandation(filterTab);

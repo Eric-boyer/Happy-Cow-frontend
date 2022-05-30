@@ -148,4 +148,22 @@ border-radius: 9px;
   margin-top: -19%;
   margin-left: 65%;
 }
-
+.div-under-header-restaurant{
+  width: 0 auto;
+  height: 80px;
+  background-color: #9069cd;
+  display: flex;
+  justify-content: center;
+}
+.container-inside-header-restaurant{
+  height: 80px;
+  background-color: blue;
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+.second-div-under-header-restaurant{
+  width: 0 auto;
+  height: 90px;
+  background-color: brown;
+}
