@@ -53,7 +53,7 @@ const Modal = ({ closeModal, setUser }) => {
         </div>
         <div className="title">
           <h4 className="title" style={{ color: "white" }}>
-            Est tu sur de vouloir continuer? Si Oui
+            Est tu sur de vouloir continuer?<br/> Si Oui
           </h4>
         </div>
         <div className="body-form">
@@ -85,10 +85,10 @@ const Modal = ({ closeModal, setUser }) => {
             <br />
             <input
               className="button-login"
-              onClick={() => navigate("/restaurant")}
+              onClick={() => navigate("/")}
               type="submit"
               value="se connecter"
-              style={{ color: "white", backgroundColor: "#9069CD" }}
+              style={{ color: "white", backgroundColor: "gray" }}
             />
             <p className="message-error">{error}</p>
           </form>

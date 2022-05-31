@@ -5,14 +5,13 @@ import { useEffect, useState } from "react";
 import Stars from "../components/Stars";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-
 const Home = () => {
   const [search, setSearch] = useState("");
   const [recomandation, setRecomandation] = useState([]);
 
   useEffect(() => {
     const filterTab = data.filter((item) => {
-      return item.name.toLowerCase()=== search
+      return item.name.toLowerCase() === search;
     });
     // console.log(filterTab);
     setRecomandation(filterTab);
@@ -28,7 +27,7 @@ const Home = () => {
           className="input-inside-picture"
           onChange={(event) => {
             setSearch(event.target.value);
-            console.log(search)
+            console.log(search);
           }}
         ></input>
         <Link to="/recherche" state={search}>
@@ -43,19 +42,16 @@ const Home = () => {
       </div>
       <div className="container">
         {recomandation.length !== 0 ? (
-          <div>
-            <h3>{recomandation[0].name}</h3>
-            <div>
-              {recomandation[0].pictures.map((picture, index) => {
-                return (
-                  <div className="caroussel-restaurant">
-                    <div>
-                      <img key={index} src={picture} alt="" />
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
+          // <h3>{recomandation[0].name}</h3>
+          
+          <div className="caroussel-restaurant">
+            {recomandation[0].pictures.map((picture, index) => {
+              return (
+                <div>
+                  <img key={index} src={picture} alt="" />
+                </div>
+              );
+            })}
           </div>
         ) : (
           data.map((item, index) => {

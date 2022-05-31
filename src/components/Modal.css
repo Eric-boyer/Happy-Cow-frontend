@@ -1,7 +1,7 @@
 .modalBackground {
   width: 50vw;
   height: 14vw;
-  background-color: rgb(123, 216, 74);
+  background-color: #25820e;
   position: fixed;
   margin-left: 25%;
   transition: all 0, 90s ease-out;
@@ -50,7 +50,7 @@ margin-top: 1%;
 
   margin: 10px;
   border: none;
-  background-color:#9069CD;
+  background-color:gray;
   color: white;
   border-radius: 8px;
   font-size: 12px;
@@ -58,7 +58,7 @@ margin-top: 1%;
 }
 
 #cancelBtn {
-  background-color: crimson;
+  background-color: brown;
   
 }
 .modal-image {
