@@ -10,9 +10,9 @@ import Restaurant from "./pages/Restaurant";
 import Recherche from "./pages/Recherche";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
-import {faBarsStaggered,faMagnifyingGlass} from "@fortawesome/free-solid-svg-icons";
+import {faBarsStaggered,faMagnifyingGlass,faHouse} from "@fortawesome/free-solid-svg-icons";
 
-library.add(faBarsStaggered,faMagnifyingGlass);
+library.add(faBarsStaggered,faMagnifyingGlass,faHouse);
 
 function App() {
   const [token, setToken] = useState(Cookies.get("userToken") || null);

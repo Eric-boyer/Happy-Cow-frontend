@@ -38,7 +38,7 @@ const Home = () => {
             />
           </div>
         </Link>
-        <div></div>
+       
       </div>
       <div className="container">
         {recomandation.length !== 0 ? (
@@ -55,9 +55,12 @@ const Home = () => {
           </div>
         ) : (
           data.map((item, index) => {
-            // console.log(item);
+            
             return (
+              <>
+             
               <div className="name-thumbail-description-container" key={index}>
+              
                 <div className="name-thumbnail">
                   <Link to="/restaurant" state={{ item }}>
                     <div className="picture-div">
@@ -77,6 +80,7 @@ const Home = () => {
                   <p>{item.rating}</p>
                 </div>
               </div>
+              </>
             );
           })
         )}

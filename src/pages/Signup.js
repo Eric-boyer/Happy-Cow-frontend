@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 const Signup = ({ setUser }) => {
   const [username, setUsername] = useState("");
-  const [email, setEmail] = useState("eric5@mail.com");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmpassword, setConfirmpassword] = useState("");
   const [error, setError] = useState("");
@@ -37,9 +37,10 @@ const Signup = ({ setUser }) => {
   };
 
   return (
+    <>
     <div className="restaurant">
     <form className="register-box" onSubmit={handleSignup}>
-      <p>SIGNUP</p>
+      <p style={{color:"white"}}>SIGNUP</p>
       <input className="input"
         value={username}
         placeholder="Username"
@@ -72,6 +73,8 @@ const Signup = ({ setUser }) => {
       <p className="message-error">{error}</p>
     </form>
     </div>
+    
+    </>
   );
 };
 

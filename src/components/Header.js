@@ -2,12 +2,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Logo from "../assets/img/Logo.png";
 import Modal from "./Modal";
 import { useState } from "react";
-import { useNavigate,Link } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 const Header = ({ token, setUser }) => {
   const navigate = useNavigate();
   const [openModal, setOpenModal] = useState(false);
-
 
   return (
     <>
@@ -19,8 +18,11 @@ const Header = ({ token, setUser }) => {
             icon="fa-solid fa-bars-staggered"
             style={{ color: "grey" }}
           />
-         <div className="div-logo">
-         <Link to="/">   <img className="logo" src={Logo} alt="" /></Link>
+          <div className="div-logo">
+            <Link to="/">
+              {" "}
+              <img className="logo" src={Logo} alt="" />
+            </Link>
           </div>
         </div>
 
@@ -55,9 +57,8 @@ const Header = ({ token, setUser }) => {
           )}
         </div>
       </section>
-     
+
       {openModal && <Modal closeModal={setOpenModal} />}
-      
     </>
   );
 };

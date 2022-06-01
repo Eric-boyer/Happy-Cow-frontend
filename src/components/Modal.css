@@ -1,6 +1,6 @@
 .modalBackground {
   width: 50vw;
-  height: 14vw;
+  height: 26vw;
   background-color: #25820e;
   position: fixed;
   margin-left: 25%;
@@ -8,12 +8,13 @@
   border-radius: 9px;
   display: flex;
   justify-content: space-between;
+  z-index: 10;
 }
 
 .modalContainer {
 display: inline-block;
 margin-right: 10%;
-margin-top: 1%;
+margin-top: 9%;
 }
 .titleClooseBtn {
   display: flex;
