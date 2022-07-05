@@ -41,9 +41,9 @@ const Recherche = () => {
     <div>en cours...</div>
   ) : (
     <>
-      {console.log(data)}
-      <div className="leaflet-container">
-        <MapContainer
+   
+      <div >
+        <MapContainer className="eric"
           center={[48.856614, 2.3522219]}
           zoom={12}
           scrollWheelZoom={true}
@@ -70,8 +70,9 @@ const Recherche = () => {
       {data.map((item) => {
         return (
           <>
-            <div>{item.name}</div>
-            <div className="caroussel-restaurant">
+         
+            <div className="caroussel-restaurant1">
+            <p>{item.name}</p>
               {item.pictures.map((picture, index) => {
                 return (
                   <div className="container-inside-caroussel">
@@ -92,6 +93,8 @@ const Recherche = () => {
               })}
             </div>
           </>
+
+          
         );
       })}
     </>

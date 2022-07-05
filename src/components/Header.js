@@ -27,12 +27,6 @@ const Header = ({ token, setUser }) => {
         </div>
 
         <div className="div-font">
-          <FontAwesomeIcon
-            className="foont1"
-            icon="fa-solid fa-magnifying-glass"
-            style={{ color: "#9069CD" }}
-          />
-
           {token === null ? (
             <button
               onClick={() => {
@@ -55,6 +49,7 @@ const Header = ({ token, setUser }) => {
               Deconnexion
             </button>
           )}
+         
         </div>
       </section>
 

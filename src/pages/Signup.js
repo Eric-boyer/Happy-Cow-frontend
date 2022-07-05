@@ -23,7 +23,7 @@ const Signup = ({ setUser }) => {
       });
       console.log(response.data);
       if (response.data) {
-        console.log("j'ai réussi ma création");
+        setError("création réussie ");
         setUser(response.data.token);
         navigate("/");
       }

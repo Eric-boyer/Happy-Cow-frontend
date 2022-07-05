@@ -19,7 +19,7 @@ const Home = () => {
 
   return (
     <>
-      <img className="Vg-picture-Home" src={Vegan} />
+      <img className="Vg-picture-Home" src={Vegan} alt="" />
       <div>
         <input
           value={search}
@@ -27,7 +27,7 @@ const Home = () => {
           className="input-inside-picture"
           onChange={(event) => {
             setSearch(event.target.value);
-            console.log(search);
+         
           }}
         ></input>
         <Link to="/recherche" state={search}>

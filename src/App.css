@@ -25,7 +25,7 @@
   width: 33vw;
   margin-left: 35%;
   color: white;
-  height: 43px;
+  height: 53px;
   font-size: 17px;
   border-radius: 9px;
   background-color: whitesmoke;
@@ -237,9 +237,15 @@
 }
 .loupe-search {
   font-size: 30px;
-  position: relative;
+  position:relative;
   margin-top: -19%;
   margin-left: 65%;
+display: flex;
+  width: 2%;
+  height: 2rem;
+  justify-content: end;
+  align-items: center;
+  
 }
 .div-under-header-restaurant {
   width: 0 auto;
@@ -300,3 +306,20 @@
   background-color: rgb(226, 221, 221);
 }
 
+.caroussel-restaurant1 {
+  border: white solid 3px;
+  height: 290px;
+  width: 60%;
+  margin-left: 20%;
+
+  display: flex;
+  overflow: hidden;
+  overflow-x: scroll;
+  flex-direction: row;
+  margin-top: 11rem;
+}
+.eric{
+  width: 100%;
+position: relative;
+
+}
