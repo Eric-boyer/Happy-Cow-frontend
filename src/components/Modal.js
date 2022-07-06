@@ -18,8 +18,8 @@ const Modal = ({ token, closeModal, setUser }) => {
       event.preventDefault();
       setError("");
       const response = await axios.post(
-        "http://localhost:4000/user/login",
-        // "https://eric-happy-cow.herokuapp.com/user/login",
+        // "http://localhost:4000/user/login",
+         "https://eric-happy-cow.herokuapp.com/user/login",
 
         {
           username,

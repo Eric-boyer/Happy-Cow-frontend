@@ -24,7 +24,7 @@ const Slider = () => {
         </div>
       </div>
       <div className="div-containt-image-slide">
-        <img className="image-slider" src={Recette} />
+        <img className="image-slider" src={Recette} alt="" />
         <div className="overlay">
           <h2 className="overlay__title"> WELCOME TO HAPPY COW</h2>
           <p className="overlay__text">
@@ -38,7 +38,7 @@ const Slider = () => {
         </div>
       </div>
       <div className="div-containt-image-slide">
-        <img className="image-slider" src={vivevegan} />
+        <img className="image-slider" src={vivevegan} alt="" />
         <div className="overlay">
           <h2 className="overlay__title"> WELCOME TO HAPPY COW</h2>
           <p className="overlay__text">Why did the tomato blush? - Because he saw the salad, dressing</p>

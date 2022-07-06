@@ -1,11 +1,11 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useLocation, Link } from "react-router-dom";
+import { useLocation} from "react-router-dom";
 import "leaflet/dist/leaflet.css";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import MarkerIcon from "../assets/MarkerIcon";
 import Stars from "../components/Stars";
-import data from "../assets/data.json";
+
 
 const Recherche = () => {
   const [isLoading, setIsLoading] = useState(true);
